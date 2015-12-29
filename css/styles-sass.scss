@@ -18,6 +18,12 @@ nav .brand-logo {
   color: #444;
 }
 
+/* Links in nav bar */
+body > nav > div > ul > li > a {
+  color: $theme-blue;
+  font-size: 150%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -65,8 +71,8 @@ span.title{
     border-radius: 0% !important;
 }
 
-.container {
-
+.collection {
+  border: 0px;
 }
 
 .iowa-girls-code-camp-section {
@@ -104,9 +110,13 @@ span.title{
     display: inline-flex;
 }
 
+.row {
+  text-align: center;
+}
+
 .section-heading{
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     color: white;
     margin-top: 0px;
 
@@ -117,9 +127,8 @@ span.title{
 
 .section {
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
-
 
 #about-text, a.secondary-content {
     color: $theme-blue !important;
@@ -149,6 +158,10 @@ background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,
 background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,156,101,1) 75%,rgba(255,156,101,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,156,101,1) 75%,rgba(255,156,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff9c65',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#schedule-container-wrapper > div > ul > li {
+  opacity: 0;
 }
 
 #sponsors-container-wrapper{
@@ -248,7 +261,9 @@ footer.page-footer {
 
 /* Medium and down */
 @media only screen and (max-width : 992px) {
-
+    #register-button {
+      margin-left: 10%;
+    }
 }
 
 /* small only */
@@ -266,6 +281,10 @@ footer.page-footer {
 
     .parallax-container {
     height: 200px;
+    }
+
+    .section {
+      padding-bottom: 10%;
     }
 }
 

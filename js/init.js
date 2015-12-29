@@ -5,6 +5,10 @@ function fadeInCodeCampGoalParallaxSection() {
   	});
 }
 
+function addZdepthToSchedule(){
+  $(".collection").addClass("z-depth-4");
+}
+
 (function($){
 
 /*
@@ -28,7 +32,7 @@ function fadeInCodeCampGoalParallaxSection() {
 
   $(function(){
 
-    $('.button-collapse').sideNav();
+    //$('.button-collapse').sideNav();
     $('.parallax').parallax();
 
     $( ".iowa-girls-code-camp-section" ).fadeIn(1500);
@@ -37,7 +41,11 @@ function fadeInCodeCampGoalParallaxSection() {
     	scrollingNavBar();
 	});
 
-	var options = [{selector: '#code-camp-goal-parallax', offset: 380, callback: 'fadeInCodeCampGoalParallaxSection()'},];
+	var options = [
+      {selector: '#code-camp-goal-parallax', offset: 380, callback: 'fadeInCodeCampGoalParallaxSection()'},
+      {selector: '.collection', offset: 400, callback: 'Materialize.showStaggeredList(".collection")' },
+      {selector: '.collection', offset: 600, callback: 'addZdepthToSchedule()' }
+    ];
   	Materialize.scrollFire(options);
 
 //#container-in-parallax
