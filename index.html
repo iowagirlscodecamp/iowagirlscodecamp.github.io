@@ -12,23 +12,6 @@
 </head>
 <body>
 
-  <!-- Nav bar -->
-  <div class="navbar-fixed">
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"> <i class="fa fa-bars"></i> </a>
-    </div>
-  </nav>
-</div>
-
 <!-- Landing page section -->
 <div id="iowa-girls-code-camp-image">
   <div id="gradient-section">
@@ -40,7 +23,6 @@
           <h5 class="header col s12 light">February 27th, 2016</h5>
         </div>
         <div class="row center">
-          <a href="" id="register-button" class="btn-large waves-effect waves-light teal lighten-1">Register</a>
         </div>
       </div>
     </div>
@@ -48,44 +30,72 @@
   </div>
 </div>
 
+  <!-- Nav bar -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#iowa-girls-code-camp-image" class="brand-logo">Iowa Girls Code Camp</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about-text">About</a></li>
+        <li><a href="#map-container-wrapper">Location</a></li>
+        <li><a href="#schedule-container-wrapper">Schedule</a></li>
+        <li><a href="" id="register-button" class="btn-large waves-effect waves-light teal lighten-1 z-depth-1">Register</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"> <i class="fa fa-bars"></i> </a>
+    </div>
+  </nav>
+
 <!-- FAQ section -->
 <div id="faq-container-wrapper">
-  <div class="section container">
+  <div id="about-section-container" class="section container">
       <div class="row">
          <div class="section-heading">
           <h1 id="about-text">About</h1>
         </div>
         <div class="col s12">
           <h5 id="code-camp-description">Iowa Girls Code Camp is the first ever coding camp for high school girls in the state of Iowa. While Computer Science is one of the fastest growing majors today, women make up only <b>18%</b> of graduates.
-          <br> <br>Our goal is to educate young women about careers in Computer Science and give them the skills necessary to start coding on their own.</h5>
+         </h5>
         </div>
       </div>
-      <!--   Icon Section   -->
+  </div>
+</div>
+
+<div id="code-camp-goal-parallax" class="parallax-container">
+  <div class="parallax-shadow-wrapper">
+      <h4 id="code-camp-goal-parallax-text" class="header col s12 light">
+        Our goal is to educate young Iowa women about careers in Computer Science and give them the skills to start coding on their own.
+      </h4>
+  </div>
+      <div class="parallax"><img src="GirlsWhoCode.jpg"></div>
+</div>
+
+  <div class="container">
+    <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m6">
           <div class="icon-block">
-          <h2 class="center brown-text"> <i class="fa fa-usd"></i> </h2>
-          <h4 class="center">Is it free to attend?</h4>
+          <h4> <i class="fa fa-usd"></i> Is it free to attend?</h4>
           <h5 class="light">Yes, the event is totally free to attend, and includes breakfast and lunch.<br>Simply register <a href="">here.</a></h5>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
-          <h2 class="center brown-text"> <i class="fa fa-code"></i> </h2>
-          <h4 class="center">Do I need prior coding experience?</h4>
-          <h5 class="light">Nope! This event is geared toward total beginners, to show how easy it is to get started coding and all of the cool things you can make.</h5>
+          <h4> <i class="fa fa-code"></i> Do I need prior coding experience?</h4>
+          <h5 class="light">Nope! This event is geared toward total beginners, to show how easy it is to get started coding.</h5>
           </div>
         </div>
       </div>
   </div>
-</div>
 
 <!-- Location section -->
 <div id="map-container-wrapper">
   <div id ="map-container" class="section container">
     <div class="section-heading">
-        <h1>Location</h1>
+        <h1 style="margin-bottom: 0;">Location</h1>
         <h5>Geonetric</h5>
         <h6>415 12th Ave SE<br>Cedar Rapids, IA 52401</h6>
     </div>
@@ -195,19 +205,6 @@
   </div>
 </div>
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-
 <!-- Footer section -->
   <footer class="page-footer">
     <div class="container">
@@ -240,7 +237,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="brown-text text-lighten-3" href="http://kelseyhrub.es">Kelsey Hrubes</a>
       </div>
     </div>
   </footer>

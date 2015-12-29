@@ -2,10 +2,16 @@ $font-family:   "Roboto";
 $font-size:     14px;
 
 $theme-pink: #EC79A4;
-$theme-pink-opacite: rgba(236, 121, 164, .8);
+$theme-pink-opacite: rgba(236, 121, 164, .85);
 $theme-orange: #FF9C65;
-$theme-orange-opacite: rgba(255, 156, 101, .8);
+$theme-orange-opacite: rgba(255, 156, 101, .85);
 $theme-blue: #89B9C7;
+
+/* Mixins */
+@mixin parallax-shadow() {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+}
 
 nav ul a,
 nav .brand-logo {
@@ -29,10 +35,9 @@ footer {
     background-color: $theme-blue !important;
 }
 
-#schedule-container-wrapper > div > ul > li > p{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+/* Nav bar link text on desktop */
+body > nav > div > ul.right.hide-on-med-and-down > li > a {
+    font-size: 120%;
 }
 
 p {
@@ -61,16 +66,31 @@ span.title{
 }
 
 .container {
-    text-align: center;
+
 }
 
 .iowa-girls-code-camp-section {
+    display: none; /* for fadein animation */
     position: relative;
     top: 15%;
 }
 
+.navbar-fixed {
+    top: 100%;
+}
+
+.navbar-stuck-to-top {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 500;
+}
+
+.nav-wrapper {
+    width: 90%;
+}
+
 .parallax-container, #iowa-girls-code-camp-image {
-  min-height: 380px;
+  min-height: 450px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -78,6 +98,10 @@ span.title{
 
 .parallax-container .section {
     width: 100%;
+}
+
+.parallax-container {
+    display: inline-flex;
 }
 
 .section-heading{
@@ -93,8 +117,9 @@ span.title{
 
 .section {
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
+
 
 #about-text, a.secondary-content {
     color: $theme-blue !important;
@@ -117,6 +142,19 @@ span.title{
     font-weight: 300;
 }
 
+#code-camp-goal-parallax-text {
+  -webkit-text-shadow: 3px 3px 3px black;
+  -moz-text-shadow: 3px 3px 3px black;
+  text-shadow: 3px 3px 3px black;
+  color: white !important;
+  margin-bottom: 0;
+  margin-top: 15%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+
 #iowa-girls-code-camp-image {
   height : 100vh;
   background: url(../techchicks1.jpg);
@@ -133,6 +171,11 @@ span.title{
   background: linear-gradient(45deg, $theme-pink-opacite 10%, $theme-orange-opacite 90%);
 }
 
+/* down arrow */
+#gradient-section > div.arrow-down-wrapper > i {
+    font-size: 400%;
+}
+
 #iowa-girls-code-camp {
   -webkit-text-shadow: 2px 2px 2px gray;
   -moz-text-shadow: 2px 2px 2px gray;
@@ -141,11 +184,12 @@ span.title{
   margin-bottom: 0;
 }
 
-#map-column {
-    padding: 0 0 0 0;
+#iowa-girls-code-camp {
+    font-size: 600%; /* TODO remove after inclusion of logo */
 }
 
-#map-container {
+#map-column {
+    padding: 0 0 0 0;
 }
 
 #schedule-container-wrapper{
@@ -159,6 +203,12 @@ span.title{
 #register-button, {
     background-color: $theme-blue !important;
 } 
+
+.parallax-shadow-wrapper {
+    @include parallax-shadow();
+    min-height: 450px;
+    text-align: center;
+}
 
 i {
     color : $theme-blue !important;
@@ -175,23 +225,29 @@ footer.page-footer {
   margin: 0;
 }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #iowa-girls-code-camp-image .section {
-    top: 10%;
-  }
-}
-
 
 /* Media Queries */
+
+/* Medium and down */
+@media only screen and (max-width : 992px) {
+
+}
 
 /* small only */
 @media only screen and (max-width: 600px) {
     #map {
         height: 300px;
+    }
+    #logo-container, body > nav > div > a.button-collapse > i{
+        font-size: 150%;
+    }
+
+    .arrow-down-wrapper {
+        bottom: 7%;
+    }
+
+    .parallax-container {
+    height: 200px;
     }
 }
 
