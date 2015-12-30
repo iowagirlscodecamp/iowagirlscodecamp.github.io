@@ -54,13 +54,6 @@ span.title{
     font-weight: 500;
 }
 
-.arrow-down-wrapper {
-    position: absolute; 
-    bottom: 15%;
-    text-align: center;
-    width: 100%;
-}
-
 .button-collapse {
   color: #26a69a;
 }
@@ -190,12 +183,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   opacity: 0;
 }
 
-#iowa-girls-code-camp-image {
-  height : 100vh;
-  background: url(../techchicks1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  opacity: 1;
+#down-arrow {
+  display: block;
+  position: absolute;
+  color: white!important;
+  margin-left: 48%;
+  font-size: 400%;
+  bottom: 10%;  
 }
 
 #gradient-section {
@@ -206,9 +200,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   background: linear-gradient(45deg, $theme-pink-opacite 10%, $theme-orange-opacite 90%);
 }
 
-/* down arrow */
-#gradient-section > div.arrow-down-wrapper > i {
-    font-size: 400%;
+#iowa-girls-code-camp-image {
+  height : 100vh;
+  background: url(../techchicks1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  opacity: 1;
 }
 
 #iowa-girls-code-camp {
@@ -217,10 +214,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   text-shadow: 2px 2px 2px gray;
   color: white !important;
   margin-bottom: 0;
-}
-
-#iowa-girls-code-camp {
-    font-size: 600%; /* TODO remove after inclusion of logo */
+  font-size: 600%; /* TODO remove after inclusion of logo */
 }
 
 #map-column {
@@ -275,10 +269,6 @@ footer.page-footer {
         font-size: 150%;
     }
 
-    .arrow-down-wrapper {
-        bottom: 7%;
-    }
-
     .parallax-container {
     height: 200px;
     }
@@ -286,12 +276,25 @@ footer.page-footer {
     .section {
       padding-bottom: 10%;
     }
+
+    #register-button {
+      margin-left: 0;
+      margin-top: 5%;
+    }
+
+    #down-arrow {
+      display: none;
+    }
 }
 
 /* medium and up */
 @media only screen and (min-width: 601px) {
       #map {
         height: 500px;
+    }
+
+    .register-button-mobile {
+      display: none;
     }
 }
 

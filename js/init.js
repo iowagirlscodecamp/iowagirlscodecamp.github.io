@@ -48,8 +48,9 @@ function addZdepthToSchedule(){
     ];
   	Materialize.scrollFire(options);
 
-//#container-in-parallax
-
+    $("#register-button").click(function() {
+      Materialize.toast("Registration is not open yet.", 1500 );
+    });
 
   }); // end of document ready
 
