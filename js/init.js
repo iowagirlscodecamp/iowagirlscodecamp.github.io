@@ -1,7 +1,6 @@
 var INITIAL_NAV_OFFSET = $("nav").offset().top;
 function fadeInCodeCampGoalParallaxSection() {
 	$("#code-camp-goal-parallax-text").fadeTo( 2500, 1, function() {
-     console.log("Animation complete.");
   	});
 }
 
@@ -9,8 +8,24 @@ function addZdepthToSchedule(){
   $(".collection").addClass("z-depth-4");
 }
 
-(function($){
+function initUpcounter(){
+        $('.timer').countTo({
+            from: 0,
+            to: 18,
+            speed: 2000,
+            refreshInterval: 50,
+        });
+}
 
+function fadeInCodeCampDescription(){
+    $( "#code-camp-description-1" ).fadeTo( 1000, 1, function() {
+      $( "#code-camp-description-2" ).fadeTo( 1000, 1, function() {
+        initUpcounter();
+      });
+    });
+}
+
+(function($){
 /*
 	Creates the sticky nav effect when scrolling by the nav bar
 */
@@ -44,7 +59,9 @@ function addZdepthToSchedule(){
 	var options = [
       {selector: '#code-camp-goal-parallax', offset: 380, callback: 'fadeInCodeCampGoalParallaxSection()'},
       {selector: '.collection', offset: 400, callback: 'Materialize.showStaggeredList(".collection")' },
-      {selector: '.collection', offset: 600, callback: 'addZdepthToSchedule()' }
+      {selector: '.collection', offset: 600, callback: 'addZdepthToSchedule()' },
+      {selector: '#code-camp-description', offset: 100, callback: 'fadeInCodeCampDescription()' }
+
     ];
   	Materialize.scrollFire(options);
 
@@ -70,4 +87,52 @@ $(function() {
   });
 });
 
+
+
+/* Upcounter */
+(function($) {
+    $.fn.countTo = function(options) {
+        // merge the default plugin settings with the custom options
+        options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(options.speed / options.refreshInterval),
+            increment = (options.to - options.from) / loops;
+
+        return $(this).each(function() {
+            var _this = this,
+                loopCount = 0,
+                value = options.from,
+                interval = setInterval(updateTimer, options.refreshInterval);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                $(_this).html(value.toFixed(options.decimals));
+
+                if (typeof(options.onUpdate) == 'function') {
+                    options.onUpdate.call(_this, value);
+                }
+
+                if (loopCount >= loops) {
+                    clearInterval(interval);
+                    value = options.to;
+
+                    if (typeof(options.onComplete) == 'function') {
+                        options.onComplete.call(_this, value);
+                    }
+                }
+            }
+        });
+    };
+    $.fn.countTo.defaults = {
+        from: 0,  // the number the element should start at
+        to: 18,  // the number the element should end at
+        speed: 1000,  // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,  // the number of decimal places to show
+        onUpdate: null,  // callback method for every time the element is updated,
+        onComplete: function() {console.log("counting done")},  // callback method for when the element finishes updating
+    };
+})(jQuery);
 })(jQuery); // end of jQuery name space

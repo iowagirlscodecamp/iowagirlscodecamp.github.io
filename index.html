@@ -15,16 +15,13 @@
 <!-- Landing page section -->
 <div id="iowa-girls-code-camp-image">
   <div id="gradient-section">
-    <div class="section iowa-girls-code-camp-section">
-      <div class="container">
-        <br><br>
-        <h1 id="iowa-girls-code-camp" class="header center teal-text text-lighten-2">Iowa Girls<br>Code Camp</h1>
+    <div class="container section iowa-girls-code-camp-section">
+        <img class="responsive-img" src="iowa-girls-code-camp-white.png">
         <div class="row center">
           <h5 class="header col s12 light">February 27th, 2016</h5>
-                    <!-- register button, only on mobile -->
+          <!-- register button, only on mobile -->
           <a class="register-button-mobile btn-large waves-effect waves-light teal lighten-1 z-depth-1" id="register-button" class="btn-large waves-effect waves-light teal lighten-1 z-depth-1">Register</a>
         </div>
-      </div>
     </div>
     <i id="down-arrow" class="fa fa-2x fa-angle-down"></i>
   </div>
@@ -33,8 +30,7 @@
   <!-- Nav bar -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#iowa-girls-code-camp-image" class="brand-logo">Iowa Girls Code Camp</a>
-      
+      <img class="responsive-img brand-logo" src="iowagirlscodecampcolor-navbar.png">      
       <ul>
         <!-- Nav bar elements listed in the opposite order they appear due to the 'right' class --> 
         <li class="right hide-on-small-and-down"><a id="register-button" class="btn-large waves-effect waves-light teal lighten-1 z-depth-1">Register</a></li>
@@ -42,26 +38,24 @@
         <li class="right hide-on-med-and-down"><a href="#map-container-wrapper">Location</a></li>
         <li class="right hide-on-med-and-down"><a href="#about-text">About</a></li>
       </ul>
-
-<!--       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#about-text">About</a></li>
-        <li><a href="#map-container-wrapper">Location</a></li>
-        <li><a href="#schedule-container-wrapper">Schedule</a></li>
-      </ul> -->
-<!--       
-      <a href="#" data-activates="nav-mobile" class="button-collapse"> <i class="fa fa-bars"></i> </a> -->
     </div>
   </nav>
 
 <!-- About section -->
 <div id="faq-container-wrapper">
   <div id="about-section-container" class="section container">
-      <div class="section-heading">
+      <div class="section-heading" id="about-section-heading">
           <h1 id="about-text">About</h1>
       </div>
       <div class="row">
         <div class="col s12">
-          <h5 id="code-camp-description">Iowa Girls Code Camp is the first ever coding camp for high school girls in the state of Iowa. While Computer Science is one of the fastest growing majors today, women make up only <b>18%</b> of graduates.
+          <h5 id="code-camp-description">
+            <div id="code-camp-description-1">
+              Iowa Girls Code Camp is the first ever coding camp for high school girls in the state of Iowa.
+            </div>
+            <div id="code-camp-description-2">
+              While Computer Science is one of the fastest growing majors today,<br>women make up only <span class="timer">0</span><b>%</b> of graduates.
+            </div>
          </h5>
         </div>
       </div>
@@ -82,14 +76,16 @@
       <div class="row">
         <div class="col s12 m6">
           <div class="icon-block">
-          <h4> <i class="fa fa-usd"></i> Is it free to attend?</h4>
+          <i class="fa fa-usd faq-icon"></i>
+          <h4>Is it free to attend?</h4>
           <h5 class="light">Yes, the event is totally free to attend, and includes breakfast and lunch.<br>Simply register <a href="">here.</a></h5>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
-          <h4> <i class="fa fa-code"></i> Do I need prior coding experience?</h4>
+          <i class="fa fa-code faq-icon"></i> 
+          <h4>Do I need prior coding experience?</h4>
           <h5 class="light">Nope! Iowa Girls Code Camp is geared toward total beginners, to show how easy it is to get started coding.</h5>
           </div>
         </div>

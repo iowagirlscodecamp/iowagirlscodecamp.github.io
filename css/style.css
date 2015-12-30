@@ -51,7 +51,11 @@ span.title {
   display: none;
   /* for fadein animation */
   position: relative;
-  top: 15%; }
+  top: 50%;
+  transform: translateY(-50%); }
+
+.faq-icon {
+  font-size: 200%; }
 
 .navbar-fixed {
   top: 100%; }
@@ -91,8 +95,14 @@ span.title {
   padding-top: 5%;
   padding-bottom: 5%; }
 
+.timer {
+  font-weight: 600; }
+
 #about-text, a.secondary-content {
   color: #89B9C7 !important; }
+
+#about-section-heading {
+  margin-bottom: 0; }
 
 #map-container-wrapper, #schedule-container-wrapper, #faq-container-wrapper, #sponsors-container-wrapper {
   display: -webkit-box !important; }
@@ -144,6 +154,12 @@ span.title {
 
 #code-camp-description {
   font-weight: 300; }
+
+#code-camp-description-1, #code-camp-description-2 {
+  opacity: 0; }
+
+#code-camp-description-2 {
+  margin-top: 3%; }
 
 #code-camp-goal-parallax-text {
   -webkit-text-shadow: 3px 3px 3px black;
@@ -247,9 +263,6 @@ footer.page-footer {
 
   .register-button-mobile {
     display: none; } }
-@media only screen and (max-width: 600px) {
-  #iowa-girls-code-camp-image .section {
-    top: 0; } }
 /* Animations */
 @keyframes arrive {
   0% {
