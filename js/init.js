@@ -62,7 +62,7 @@ function fadeInCodeCampDescription(){
 
 	var options = [
       {selector: '#code-camp-goal-parallax', offset: 380, callback: 'fadeInCodeCampGoalParallaxSection()'},
-      {selector: '#schedule-collection', offset: 300, callback: 'Materialize.showStaggeredList(".collection")' },
+      {selector: '#schedule-collection', offset: 300, callback: 'Materialize.showStaggeredList("#schedule-collection")' },
       {selector: '#schedule-collection', offset: 400, callback: 'addZdepthToSchedule()' },
       {selector: '#code-camp-description', offset: 100, callback: 'fadeInCodeCampDescription()' }, 
     ];

@@ -109,8 +109,11 @@ h4.card-title {
 .timer {
   font-weight: 600; }
 
-#about-text, a.secondary-content {
+#about-text, a.secondary-content, #faq-text {
   color: #89B9C7 !important; }
+
+#faq-text {
+  text-align: center; }
 
 #about-section-heading {
   margin-bottom: 0; }
@@ -224,7 +227,7 @@ h4.card-title {
 #map-row {
   margin-bottom: 0px; }
 
-#register-button {
+#register-button, #questions-button {
   background-color: #89B9C7 !important; }
 
 .parallax-shadow-wrapper {

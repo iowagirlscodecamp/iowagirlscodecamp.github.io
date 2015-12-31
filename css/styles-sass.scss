@@ -146,8 +146,12 @@ h4.card-title {
   font-weight: 600;
 }
 
-#about-text, a.secondary-content {
+#about-text, a.secondary-content, #faq-text {
     color: $theme-blue !important;
+}
+
+#faq-text {
+  text-align: center;
 }
 
 #about-section-heading {
@@ -264,7 +268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-bottom: 0px;
 }
 
-#register-button {
+#register-button, #questions-button {
     background-color: $theme-blue !important;
 } 
 
