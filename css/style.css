@@ -26,6 +26,9 @@ body {
 footer {
   background-color: #EC79A4 !important; }
 
+i.profile {
+  color: #89B9C7; }
+
 /* Nav bar link text on desktop */
 body > nav > div > ul.right.hide-on-med-and-down > li > a {
   font-size: 120%; }
@@ -39,6 +42,10 @@ span.title {
 .button-collapse {
   color: #26a69a; }
 
+h4.card-title {
+  font-size: 250% !important;
+  font-weight: 400 !important; }
+
 .circle {
   background-color: white !important;
   font-size: 250% !important;
@@ -46,6 +53,10 @@ span.title {
 
 .collection {
   border: 0px; }
+
+/* Collection for mentors section */
+#mentors-container-wrapper > div > div.row > div > div > div.card-reveal > ul {
+  text-align: left; }
 
 .iowa-girls-code-camp-section {
   display: none;
@@ -104,7 +115,7 @@ span.title {
 #about-section-heading {
   margin-bottom: 0; }
 
-#map-container-wrapper, #schedule-container-wrapper, #faq-container-wrapper, #sponsors-container-wrapper {
+#map-container-wrapper, #schedule-container-wrapper, #faq-container-wrapper, #sponsors-container-wrapper, #mentors-container-wrapper {
   display: -webkit-box !important; }
 
 #faq-container-wrapper {
@@ -139,7 +150,7 @@ span.title {
 #schedule-container-wrapper > div > ul > li {
   opacity: 0; }
 
-#sponsors-container-wrapper {
+#sponsors-container-wrapper, #mentors-container-wrapper {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,89b9c7+75,89b9c7+100 */
   background: white;
   /* Old browsers */
@@ -157,6 +168,9 @@ span.title {
 
 #code-camp-description-1, #code-camp-description-2 {
   opacity: 0; }
+
+#icon-block-1, #icon-block-2 {
+  display: none !important; }
 
 #code-camp-description-2 {
   margin-top: 3%; }
@@ -186,11 +200,11 @@ span.title {
   background-size: 200% 100% !important;
   animation: move 3s ease infinite;
   transform: translate3d(0, 0, 0);
-  background: linear-gradient(45deg, rgba(236, 121, 164, 0.85) 10%, rgba(255, 156, 101, 0.85) 90%); }
+  background: linear-gradient(45deg, rgba(236, 121, 164, 0.7) 10%, rgba(255, 156, 101, 0.7) 90%); }
 
 #iowa-girls-code-camp-image {
   height: 100vh;
-  background: url(../techchicks1.jpg);
+  background: url(../iowagirlscodecampbackground.jpeg);
   background-repeat: no-repeat;
   background-size: cover !important;
   opacity: 1; }

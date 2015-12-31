@@ -5,7 +5,7 @@ function fadeInCodeCampGoalParallaxSection() {
 }
 
 function addZdepthToSchedule(){
-  $(".collection").addClass("z-depth-4");
+  $(".schedule-collection").addClass("z-depth-4");
 }
 
 function initUpcounter(){
@@ -24,6 +24,10 @@ function fadeInCodeCampDescription(){
       });
     });
 }
+
+
+
+
 
 (function($){
 /*
@@ -58,10 +62,9 @@ function fadeInCodeCampDescription(){
 
 	var options = [
       {selector: '#code-camp-goal-parallax', offset: 380, callback: 'fadeInCodeCampGoalParallaxSection()'},
-      {selector: '.collection', offset: 400, callback: 'Materialize.showStaggeredList(".collection")' },
-      {selector: '.collection', offset: 600, callback: 'addZdepthToSchedule()' },
-      {selector: '#code-camp-description', offset: 100, callback: 'fadeInCodeCampDescription()' }
-
+      {selector: '.schedule-collection', offset: 400, callback: 'Materialize.showStaggeredList(".collection")' },
+      {selector: '.schedule-collection', offset: 600, callback: 'addZdepthToSchedule()' },
+      {selector: '#code-camp-description', offset: 100, callback: 'fadeInCodeCampDescription()' }, 
     ];
   	Materialize.scrollFire(options);
 
