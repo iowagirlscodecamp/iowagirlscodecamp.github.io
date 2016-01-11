@@ -207,10 +207,18 @@ h4.card-title {
 
 #iowa-girls-code-camp-image {
   height: 100vh;
-  background: url(../iowagirlscodecampbackground.jpeg);
   background-repeat: no-repeat;
   background-size: cover !important;
   opacity: 1; }
+  @media screen and (min-width: 641px) {
+    #iowa-girls-code-camp-image {
+      background: url(../iowagirlscodecampbackground.jpeg); } }
+  @media screen and (max-width: 640px) and (min-width: 400px) {
+    #iowa-girls-code-camp-image {
+      background: url(../iowagirlscodecampbackground-med.jpeg); } }
+  @media screen and (max-width: 399px) {
+    #iowa-girls-code-camp-image {
+      background: url(../iowagirlscodecampbackground-small.jpeg); } }
 
 #iowa-girls-code-camp {
   -webkit-text-shadow: 2px 2px 2px gray;

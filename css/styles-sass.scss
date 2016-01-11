@@ -245,10 +245,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #iowa-girls-code-camp-image {
   height : 100vh;
-  background: url(../iowagirlscodecampbackground.jpeg);
+
   background-repeat: no-repeat;
   background-size: cover !important;
   opacity: 1;
+
+  @media screen and (min-width: 641px){
+    background: url(../iowagirlscodecampbackground.jpeg);
+  }
+  @media screen and (max-width: 640px) and (min-width: 400px){
+    background: url(../iowagirlscodecampbackground-med.jpeg);
+  }
+  @media screen and (max-width: 399px){
+    background: url(../iowagirlscodecampbackground-small.jpeg);
+  }
+
 }
 
 #iowa-girls-code-camp {
