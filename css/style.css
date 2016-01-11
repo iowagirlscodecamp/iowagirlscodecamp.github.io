@@ -218,7 +218,8 @@ h4.card-title {
       background: url(../iowagirlscodecampbackground-med.jpeg); } }
   @media screen and (max-width: 399px) {
     #iowa-girls-code-camp-image {
-      background: url(../iowagirlscodecampbackground-small.jpeg); } }
+      background: url(../iowagirlscodecampbackground-small.jpeg);
+      height: 100%; } }
 
 #iowa-girls-code-camp {
   -webkit-text-shadow: 2px 2px 2px gray;
