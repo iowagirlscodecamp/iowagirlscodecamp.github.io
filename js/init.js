@@ -68,10 +68,6 @@ function fadeInCodeCampDescription(){
     ];
   	Materialize.scrollFire(options);
 
-    $("#register-button").click(function() {
-      Materialize.toast("Registration is not open yet.", 1500 );
-    });
-
   }); // end of document ready
 
 /* Smooth scrolling function */
