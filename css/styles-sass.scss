@@ -87,6 +87,11 @@ h4.card-title {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+
+    @media screen and (min-width: 641px){ 
+      -webkit-transform: translateY(25%);
+    } 
+   
 }
 
 .faq-icon {
@@ -120,6 +125,7 @@ h4.card-title {
 
 .parallax-container {
     display: inline-flex;
+    display: -webkit-inline-flex;
 }
 
 .row {
@@ -245,7 +251,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #iowa-girls-code-camp-image {
   height : 100vh;
-  @media screen and (min-width: 641px){
+
+  @media screen and (min-width: 641px) {
     background: url(../iowagirlscodecampbackground.jpeg);
   }
   @media screen and (max-width: 640px) and (min-width: 400px){
@@ -255,6 +262,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background: url(../iowagirlscodecampbackground-small.jpeg);
     height: 100%;
   }
+
   background-repeat: no-repeat;
   background-size: cover !important;
   opacity: 1;
