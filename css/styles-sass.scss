@@ -88,7 +88,7 @@ h4.card-title {
     top: 50%;
     transform: translateY(-50%);
 
-    @media screen and (min-width: 641px){ 
+      @media screen and (max-width: 399px){ 
       -webkit-transform: translateY(25%);
     } 
    
