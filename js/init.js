@@ -57,7 +57,7 @@ function fadeInCodeCampDescription(){
     $( ".iowa-girls-code-camp-section" ).fadeIn(1500);
 
     $("i.profile").click(function(){
-      console.log("click");
+      
     });
 
     $(window).scroll(function(){
