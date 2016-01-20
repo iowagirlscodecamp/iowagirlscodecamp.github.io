@@ -285,7 +285,10 @@ footer.page-footer {
     margin-top: 5%; }
 
   #down-arrow {
-    display: none; } }
+    display: none; }
+
+  #sponsors-container-wrapper > div > div.row > div.col {
+    margin-top: 5%; } }
 /* medium and up */
 @media only screen and (min-width: 601px) {
   #map {
