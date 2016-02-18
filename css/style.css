@@ -13,6 +13,9 @@ body > nav > div > ul > li > a {
   padding: 0;
   box-sizing: border-box; }
 
+#igcc-logo {
+  margin-bottom: 5%; }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -112,6 +115,9 @@ h4.card-title {
 
 .timer {
   font-weight: 600; }
+
+#sponsors-container-wrapper > div > div.row > div {
+  margin-bottom: 5%; }
 
 #about-text, a.secondary-content, #faq-text {
   color: #89B9C7 !important; }
