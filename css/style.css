@@ -131,7 +131,7 @@ h4.card-title {
 #about-section-heading {
   margin-bottom: 0; }
 
-#map-container-wrapper, #schedule-container-wrapper, #faq-container-wrapper, #sponsors-container-wrapper, #mentors-container-wrapper {
+#map-container-wrapper, #schedule, #faq-container-wrapper, #sponsors-container-wrapper, #mentors-container-wrapper {
   display: -webkit-box !important; }
 
 #faq-container-wrapper {
@@ -150,7 +150,7 @@ h4.card-title {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ec79a4',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-#schedule-container-wrapper {
+#schedule {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ff9c65+75,ff9c65+100 */
   background: white;
   /* Old browsers */
@@ -163,7 +163,7 @@ h4.card-title {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff9c65',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-#schedule-container-wrapper > div > ul > li {
+#schedule > div > ul > li {
   opacity: 0; }
 
 #sponsors-container-wrapper, #mentors-container-wrapper {
